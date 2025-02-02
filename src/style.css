@@ -1,0 +1,197 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    /* Font Sizes */
+    --font-size-preset-1: 24px;
+    --font-size-preset-2: 16px;
+    --font-size-preset-3: 14px;
+
+    /* Line Heights */
+    --line-height: 150%;
+
+    /* Font Weights */
+    --font-weight-extra-bold: 800;
+    /* Figtree Extra Bold */
+    --font-weight-medium: 500;
+    /* Figtree Medium */
+
+    /* Letter Spacing */
+    --letter-spacing: 0%;
+
+    /* Spacing Variables */
+    --spacing-300: 24px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    background-color: var(--yellow);
+}
+
+/* Text Presets */
+.text-preset-1 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-preset-1);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+.text-preset-2 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-preset-2);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+.text-preset-3 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+.text-preset-3-bold {
+    font-family: 'Figtree', sans-serif;
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+
+@media (min-width: 375px) {
+
+    /* blog card */
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        height: 100svh;
+        color: var(--gray-950);
+    }
+
+    .blog-card__border {
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid var(--gray-950);
+        border-radius: 20px;
+        box-shadow: var(--spacing-100) var(--spacing-100) var(--gray-950);
+    }
+
+    .blog-card {
+        background-color: var(--white);
+        width: 327px;
+        height: 501px;
+        border-radius: 20px;
+        padding: var(--spacing-300);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-300);
+    }
+
+    .blog-card__image {
+        display: inline-flex;
+        width: 279px;
+        height: 200px;
+        border: none;
+        border-radius: 10px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+    .blog-card__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 12px;
+        flex-shrink: 0;
+    }
+
+    .blog-card__tag {
+        background-color: var(--yellow);
+        padding: var(--spacing-50) var(--spacing-150);
+        border-radius: 4px;
+        display: inline-flex;
+        font-size: 12px;
+    }
+
+    .blog-card__pub-date {
+        font-size: 12px;
+    }
+
+    .blog-card__title {
+        font-size: 20px;
+    }
+
+    .blog-card__description {
+        color: var(--gray-500);
+        font-size: 14px;
+    }
+
+    .blog-card__author {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: var(--spacing-150);
+        width: 100%;
+    }
+
+    .blog-card__author-avatar {
+        aspect-ratio: 1;
+        width: 32px;
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .blog-card {
+        width: 384px;
+        height: 522px;
+    }
+
+    .blog-card__image {
+        width: 100%;
+    }
+
+    .blog-card__tag {
+        font: 14px;
+    }
+
+    .blog-card__pub-date {
+        font-size: 14px;
+    }
+
+    .blog-card__title {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .blog-card__title:hover {
+        color: var(--yellow);
+    }
+
+    .blog-card__description {
+        font-size: 16px;
+    }
+}
