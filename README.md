@@ -24,7 +24,7 @@ This is a solution to the [Blog preview card component challenge on Frontend Men
 
 ### Links
 
-- Live Site URL: []
+- Live Site URL: [https://fem-blog-card.vercel.app/]
 
 ---
 
